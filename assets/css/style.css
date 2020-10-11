@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap|Sacramento:400');
+
+.main-image {
+    margin-top: 20px;
+    background: url("../images/american-flag.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+} 
+
+.navbar {
+    font-family: 'IBM Plex Sans' sans-serif; 
+}
+
+.bg-nav {
+    background-color: rgb(189, 22, 22);
+    z-index: 1;
+    color: #fafafa;
+}
+
+.title-text {
+    padding-top: 150px;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    background-color: rgb(189, 22, 22);
+    color: #fafafa;
+}
+.phone-text {
+    padding-top: 10px;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    background-color: rgb(189, 22, 22);
+    color: #fafafa;
+}
