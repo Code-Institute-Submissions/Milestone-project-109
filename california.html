@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,7 +45,7 @@
     <div class="row">
         <a href="index.html" class="col-sm-5 main-image"></a>
         <div class="col-sm-7 d-none d-sm-block title-text">
-            <h3>American Adventures</h3>
+            <h1>American Adventures</h1>
             <p>Explore America with us and find your dream holiday</p>
         </div>
         <div class="col-sm-7 d-sm-none phone-text">
@@ -53,10 +54,44 @@
         </div>
     </div>
     </header>
-    <section class="wallpaper">
+    <section class="wallpaper-destinations">
         <div class="container-fluid">
-        
-        </div> 
+            <div class="row announcement">
+                <div class="col-11 jumbotron banner-image">
+                    <h3>Explore California!</h3>
+                    <p>From the luscous beaches of San Diego to the theme parks of LA and the cool cultural mix of San Francisco,<br>
+                    California has it all. Please click the links below to discover more about California's different regions
+                    </p>
+                </div>
+            </div>
+            <div class="row btn-decoration">
+                <div id="LA" class="col-sm-4 media">
+                    <button class="btn btn-secondary mx-auto">Los Angeles</button>
+                </div>
+                <div id="san-diego" class="col-sm-4 media">
+                    <button class="btn btn-secondary mx-auto">San Diego</button>
+                </div>
+                <div id="san-francisco" class="col-sm-4 media">
+                    <button class="btn btn-secondary mx-auto">San Francisco</button>
+                </div>
+            </div>
+            <div class="row" id="row-1">
+                <div class="col-md-6">
+                    <img class="row-1 query m-4 media mx-auto softened-borders" src="./assets/images/downtown-la.jpg" height="350" width="400" alt="John-and-sarah-testimonial">
+                </div>    
+                <div class="row-1 col-md-6 lead-text">
+                    <p>California has so much to offer. Southern California has the beautiful beaches of San Diego that are warm all year round. However you can go on to experience the urban bustle and excitement of Los Angeles (pictured) with all it's tourist attracions....</p>
+                </div> 
+            </div>
+            <div class="row">          
+                <div class="col-md-6 lead-text">
+                    <p>.....or you may fancy the high flying, cultured, cool coastal vibes of Northern California. San Francisco's Golden Gate Bridge (pictured) is a must see destination. Northern California has great people, bars and attractions. Select one of the links above to investigate these destinations further</p>
+                </div>   
+                <div class="col-md-6">
+                    <img class="query m-4 media mx-auto softened-borders" src="./assets/images/golden-gate.jpg" height="350" width="400" alt="John-and-sarah-testimonial">
+                </div>       
+            </div>     
+        </div>    
     </section>
     <footer class="container-fluid footer">
         <div class="row">
@@ -100,5 +135,6 @@
     </footer>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="assets/js/california.js" type="text/javascript"></script>
 </body>
 </html>

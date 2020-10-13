@@ -26,6 +26,7 @@
     padding-top: 190px;
     font-family: 'Sacramento', cursive;
     text-align: center;
+    letter-spacing: 2px;
     background-color: rgb(189, 22, 22);
     opacity: 0.9;
     color: #fafafa;
@@ -33,17 +34,22 @@
 .phone-text {
     padding-top: 10px;
     font-family: 'Sacramento', cursive;
+    letter-spacing: 2px;
     text-align: center;
     background-color: rgb(189, 22, 22);
     color: #fafafa;
 }
 
-.wallpaper {
+.wallpaper, .wallpaper-destinations {
     background-image: url("../images/statue-of-liberty.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 800px;
+    min-height: 1000px;
+}
+
+.wallpaper-destinations {
+    background-image: url("../images/clear-skies.jpg")
 }
 
 .testimonial {
@@ -58,6 +64,26 @@
     letter-spacing: 0;
 }
 
+.lead-text {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #070707;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin: auto;
+    width: 50%;
+    line-height: 3;
+}
+
+.btn-decoration {
+    padding: 10px;
+}
+
+.softened-borders {
+    border-radius: 35px;
+}
+
 .announcement {
     text-align: center;
     display: inline;
@@ -66,11 +92,17 @@
     font-weight: 700;
     padding: 0;
     margin: 0;
+}  
 
-}    
+.announcement h3 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-.jumbotron {
-    background-image: url("../images/grand-canyon.jpg");
+.banner-image {
+    background-image: url("../images/flight.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 25px auto;
     min-height: 200px;
 }
@@ -158,4 +190,11 @@
         display: block;
     }
 
+}
+
+@media (max-width: 443px) {
+    .query {
+        height: 200px;
+        width: 250px;
+    }
 }
