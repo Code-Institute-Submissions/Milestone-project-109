@@ -1,3 +1,3 @@
-$("#LA").click(function() {
-    (".row-1 > p").innerHTML(<p>Welcome to disneyland</p>)
+$('#san-diego').click(function(){
+    $("#san-diego").hide();
 });
