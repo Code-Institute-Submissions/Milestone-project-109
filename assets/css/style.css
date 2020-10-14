@@ -80,6 +80,11 @@
     padding: 10px;
 }
 
+.btn-edit {
+    border-radius: 25px;
+    color: blue;
+}
+
 .softened-borders {
     border-radius: 35px;
 }
@@ -196,5 +201,11 @@
     .query {
         height: 200px;
         width: 250px;
+    }
+}
+
+@media (max-width: 575px) {
+    #horizontal-align {
+        flex-wrap: nowrap;
     }
 }
