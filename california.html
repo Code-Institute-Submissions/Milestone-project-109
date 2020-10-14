@@ -77,20 +77,25 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <img id="la-image" class="query m-4 media mx-auto softened-borders" src="./assets/images/downtown-la.jpg" height="350" width="400" alt="downtown-la">
+                    <img id="row-1-image" class="query m-4 media mx-auto softened-borders" src="./assets/images/downtown-la.jpg" height="350" width="400" alt="downtown-la">
                 </div>    
                 <div class="row-1 col-md-6 lead-text">
-                    <p id="la-text">California has so much to offer. Southern California has the beautiful beaches of San Diego that are warm all year round. However you can go on to experience the urban bustle and excitement of Los Angeles (pictured) with all it's tourist attracions....</p>
+                    <p id="row-1-text">California has so much to offer. Southern California has the beautiful beaches of San Diego that are warm all year round. However you can go on to experience the urban bustle and excitement of Los Angeles (pictured) with all it's tourist attracions....</p>
                 </div> 
             </div>
+            <div class="row barrier">
+                <div class="col-md-6 offset-sm-3">
+                    <div id="map"></div>
+                </div>
+            </div>    
             <div class="row">          
                 <div class="col-md-6 lead-text">
-                    <p>.....or you may fancy the high flying, cultured, cool coastal vibes of Northern California. San Francisco's Golden Gate Bridge (pictured) is a must see destination. Northern California has great people, bars and attractions. Select one of the links above to investigate these destinations further</p>
+                    <p id="row-2-text">.....or you may fancy the high flying, cultured, cool coastal vibes of Northern California. San Francisco's Golden Gate Bridge (pictured) is a must see destination. Northern California has great people, bars and attractions. Select one of the links above to investigate these destinations further</p>
                 </div>   
                 <div class="col-md-6">
-                    <img class="query m-4 media mx-auto softened-borders" src="./assets/images/golden-gate.jpg" height="350" width="400" alt="golden-gate-bridge">
+                    <img id="row-2-image" class="query m-4 media mx-auto softened-borders" src="./assets/images/golden-gate.jpg" height="350" width="400" alt="golden-gate-bridge">
                 </div>      
-            </div>     
+            </div> 
         </div>    
     </section>
     <footer class="container-fluid footer">
@@ -135,6 +140,54 @@
     </footer>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 5,
+                center: {
+                    lat: 36.7783,
+                    lng: -119.4179
+                }
+            });
+
+            var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            var locations = [ //LA//
+                { lat: 33.8121, lng: -117.9190 },//downtown A//
+                { lat: 34.0522, lng: -118.2437 },//disneyland B//
+                { lat: 34.1381, lng: -118.3534 },//universal studios C//
+                { lat: 34.0928, lng: -118.3287 },//hollywood D//
+                { lat: 34.0099, lng: -118.4960 },//santa monica E//
+                { lat: 33.9850, lng: -118.4695 },//venice beach F//
+                { lat: 33.7701, lng: -118.1937 },//long beach G//
+
+                //SAN DIEGO//
+                { lat: 32.7353, lng: -117.1490 },//san diego zoo H//
+                { lat: 32.7341, lng: -117.1446 },//balboa-park I//
+                { lat: 32.7114, lng: -117.1599 },//gaslamp-quarter J// 
+                { lat: 32.7707, lng: -117.2514 },//mission beach K//
+                { lat: 32.7091, lng: -117.1709 },//seaport village L//
+                //SAN FRANCISCO//
+                { lat: 37.7749, lng: -122.4194},//downtown M//
+                { lat: 37.8270, lng: -122.4230},//alcatraz N//
+                { lat: 37.8199, lng: -122.4783},//golden gate bridge O//
+                { lat: 37.801945, lng: -122.418892},//lombard street P//
+                { lat: 37.8080, lng: -122.4177}//fishermans wharf Q//
+            ];
+
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+            imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"});
+        }
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ6OOApHDmEaViLWpP6FkDE1xt4au-l_A&callback=initMap"></script>
     <script type="text/javascript" src="assets/js/california.js"></script>
 </body>
 </html>

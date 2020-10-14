@@ -123,6 +123,16 @@
     color: #070707;
 }
 
+.barrier {
+    padding-bottom: 20px; 
+}
+
+div#map {
+    min-height: 360px;
+    margin: 0 auto;  
+    border-radius: 25px; 
+}
+
 /**---------Footer-------------*/
 
 .footer {
