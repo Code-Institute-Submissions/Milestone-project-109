@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,9 +24,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="florida.html">Florida</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="city-breaks.html">City Breaks</a>
-            </li>
             <li class="nav-item active">
                 <a class="nav-link" href="grand-canyon.html">The Grand Canyon</a>
             </li>
@@ -38,13 +36,13 @@
         </ul>
     </div>
     <div>
-        <a href="#" class="nav-link d-none d-md-block">Contact Us</a>
+        <a href="contact-us.html" class="nav-link d-none d-md-block">Contact Us</a>
     </div>
     </nav>
     <div class="row">
         <a href="index.html" class="col-sm-5 main-image"></a>
         <div class="col-sm-7 d-none d-sm-block title-text">
-            <h3>American Adventures</h3>
+            <h1>American Adventures</h1>
             <p>Explore America with us and find your dream holiday</p>
         </div>
         <div class="col-sm-7 d-sm-none phone-text">
@@ -53,10 +51,51 @@
         </div>
     </div>
     </header>
-    <section class="wallpaper">
+    <section class="wallpaper-destinations">
         <div class="container-fluid">
-        
-        </div> 
+            <div class="container">
+            <div class="row announcement">
+                <div class="col-11 jumbotron banner-image">
+                    <h3>Take a tour of the Grand Canyon!</h3>
+                    <p>From the luscous beaches of San Diego to the theme parks of LA and the cool cultural mix of San Francisco,<br>
+                    California has it all. Please click the links below to discover more about California's different regions
+                    </p>
+                </div>
+            </div>
+            <div id="horizontal-align" class="row btn-decoration">
+                <div class="col-sm-4 media">
+                    <button id="hoover" class="btn-sm btn-secondary mx-auto btn-edit">Hoover Damn</button>
+                </div>
+                <div class="col-sm-4 media">
+                    <button id="skywalk" class="btn-sm btn-secondary mx-auto">Skywalk</button>
+                </div>
+                <div  class="col-sm-4 media">
+                    <button id="south-rim" class="btn-sm btn-secondary mx-auto">South Rim</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img id="row-1-image" class="query m-4 media mx-auto softened-borders" src="./assets/images/grand-canyon.png" height="350" width="400" alt="downtown-la">
+                </div>    
+                <div class="row-1 col-lg-6 lead-text">
+                    <p id="row-1-text">More than 6 million people a year visit Grand Canyon National Park to experience its visitor centers, mule trips, train tour, helicopter rides, and more. There are so many things to do that it might seem a bit overwhelming but it ia more than worth it. There are a number of walks and attractions all over this vast area of land or you may want to just stop and take in the amazing views, it's entirely up to you...</p>
+                </div> 
+            </div>
+            <div class="row">          
+                <div class="col-lg-6 lead-text">
+                    <p id="row-2-text">.....the Grand Canyon is a wonderful holiday for both relaxed sight see-ers or active hikers! Whether it be the west, east, north or south rim you want to visit there is something for everyone. The trip to see the hoover damn is a must, with stunning views and a tour into it's inner workings. Then there is the breathtaking skywalk which you can learn about from clicking th link above.</p>
+                </div>   
+                <div class="col-lg-6">
+                    <img id="row-2-image" class="query m-4 media mx-auto softened-borders" src="./assets/images/grand-canyon2.png" height="350" width="400" alt="golden-gate-bridge">
+                </div>      
+            </div>
+            <div class="row barrier">
+                <div class="col">
+                    <div id="map"></div>
+                </div>
+            </div>    
+            </div> 
+        </div>    
     </section>
     <footer class="container-fluid footer">
         <div class="row">
@@ -100,5 +139,9 @@
     </footer>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ6OOApHDmEaViLWpP6FkDE1xt4au-l_A&callback=initMap"></script>
+    <script type="text/javascript" src="assets/js/grand-canyon.js"></script>
+    <script type="text/javascript" src="assets/js/grandmap.js"> </script>
 </body>
 </html>
