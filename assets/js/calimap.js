@@ -151,7 +151,7 @@ function initMap() {
 
 function addMarkerInfo() {
     for ( var i = 0; i < markersOnMap.length; i++ ) {
-        var contentString = "<h5>" + markersOnMap[i].placeName + "</h5>" + "<p>" + markersOnMap[i].content + "</p>";
+        var contentString = "<h5>" + markersOnMap[i].placeName + "</h5>" + "<p style='text-align:center;'>" + markersOnMap[i].content + "</p>";
         const marker = new google.maps.Marker({
             position: markersOnMap[i].LatLng[0],
             map: map

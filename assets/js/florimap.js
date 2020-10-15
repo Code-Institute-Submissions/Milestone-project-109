@@ -7,131 +7,67 @@ var centerCords = {
 
 var markersOnMap = [
     {   
-        content: "this is los angeles",
-        placeName: "Los Angeles",
+        content: "this is Disneyworld",
+        placeName: "Disneyworld and the Magic Kingdom",
         LatLng:[{
-            lat: 33.8121,
-            lng: -117.9190 
+            lat: 28.3852,
+            lng: -81.5639
         }],
     },
     {
-        content: "this is los angeles",
-        placeName: "Disneyland Resort",
+        content: "Welcome to Nasa",
+        placeName: "Kennedy Space Center",
         LatLng:[{
-            lat: 34.0522,
-            lng: -118.2437 
+            lat: 28.5729,
+            lng: -80.6490
         }],
     },
     {   
-        content: "this is los angeles",
-        placeName: "Universal Studios",
+        content: "Universal Island of Adventures",
+        placeName: "Universal Island of Adventures",
         LatLng:[{
-            lat: 34.1381,
-            lng: -118.3534 
+            lat: 28.4793,
+            lng: -81.4686
         }],
     },
     {   
-        content: "this is los angeles",
-        placeName: "Hollywood",
+        content: "Miami beach is a..",
+        placeName: "Miami Beach",
         LatLng:[{
-            lat: 34.0928,
-            lng: -118.3287 
+            lat: 25.7907,
+            lng: -80.1300 
         }],
     },
     {   
-        content: "this is los angeles",
-        placeName: "Santa Monica",
+        content: "the everglades national park is..",
+        placeName: "Everglades National Park",
         LatLng:[{
-            lat: 34.0099,
-            lng: -118.4960 
+            lat: 25.7459,
+            lng: -80.5550
         }],
     },
     {   
-        content: "this is los angeles",
-        placeName: "Venice Beach",
+        content: "Seaworld orlando is...",
+        placeName: "Seaworld Orlando",
         LatLng:[{
-            lat: 33.9850,
-            lng: -118.4695 
+            lat: 28.4097,
+            lng: -81.4597 
         }],
     },
     {   
-        content: "this is los angeles",
-        placeName: "Long Beach",
+        content: "Busch Gardens is a..",
+        placeName: "Busch Gardens",
         LatLng:[{
-            lat: 33.7701,
-            lng: -118.1937
+            lat: 28.0372,
+            lng: -82.4194
         }],
     },
     {   
-        content: "this is los angeles", 
-        placeName: "San Diego Zoo",
+        content: "Universal Studios is a...", 
+        placeName: "Universal Studios Florida",
         LatLng:[{
-            lat: 32.7353,
-            lng: -117.1490
-        }],
-    },
-    {   
-        content: "this is los angeles",
-        placeName: "Gaslamp Quarter",
-        LatLng:[{
-            lat: 32.7114,
-            lng: -117.1599
-        }],
-    },
-    {   
-        content: "this is los angeles",
-        placeName: "Mission Beach",
-        LatLng:[{
-            lat: 32.7707,
-            lng: -117.2514
-        }],
-    },
-    {   
-        content: "this is los angeles",
-        placeName: "Seaport Village",
-        LatLng:[{
-            lat: 32.7091,
-            lng: -117.1709
-        }],
-    },
-    {   
-        content: "this is los angeles",
-        placeName: "San Francisco",
-        LatLng:[{
-            lat: 37.7749,
-            lng: -122.4194
-        }],
-    },
-    {   
-        content: "this is los angeles",
-        placeName: "Alcatraz",
-        LatLng:[{
-            lat: 37.8270,
-            lng: -122.4230
-        }],
-    },
-    {   
-        content: "this is los angeles",
-        placeName: "Golden Gate Bridge",
-        LatLng:[{
-            lat: 37.8199,
-            lng: -122.4783
-        }],
-    },
-    {   
-        content: "this is los angeles",
-        placeName: "Lombard Street",
-        LatLng:[{
-            lat:  37.801945,
-            lng: -122.418892
-        }],
-    },
-    {   
-        content: "this is los angeles",
-        placeName: "Fishermans Wharf",
-        LatLng:[{
-            lat:  37.8080,
-            lng: -122.4177
+            lat: 28.4743,
+            lng: -81.4678
         }],
     }
 ]; 
@@ -151,7 +87,7 @@ function initMap() {
 
 function addMarkerInfo() {
     for ( var i = 0; i < markersOnMap.length; i++ ) {
-        var contentString = "<h5>" + markersOnMap[i].placeName + "</h5>" + "<p>" + markersOnMap[i].content + "</p>";
+        var contentString = "<h5>" + markersOnMap[i].placeName + "</h5>" + "<p style='text-align:center;'>" + markersOnMap[i].content + "</p>";
         const marker = new google.maps.Marker({
             position: markersOnMap[i].LatLng[0],
             map: map
