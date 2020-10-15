@@ -29,7 +29,7 @@
     letter-spacing: 2px;
     background-color: rgb(189, 22, 22);
     opacity: 0.9;
-    color: #fafafa;
+    color: #fff5f5;
 }
 .phone-text {
     padding-top: 10px;
@@ -37,7 +37,7 @@
     letter-spacing: 2px;
     text-align: center;
     background-color: rgb(189, 22, 22);
-    color: #fafafa;
+    color: #fff5f5;
 }
 
 .wallpaper, .wallpaper-destinations {
@@ -58,7 +58,7 @@
     text-align: center;
     font-family: 'Sacramento', cursive;
     font-weight: 700;
-    color: #070707;
+    color: #1a1919;
     text-transform: none;
     font-size: 14px;
     letter-spacing: 0;
@@ -67,7 +67,7 @@
 .lead-text {
     text-align: center;
     font-family: 'Sacramento', cursive;
-    color: #070707;
+    color: #fff5f5;
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 16px;
@@ -93,7 +93,7 @@
     text-align: center;
     display: inline;
     font-family: 'Sacramento', cursive;
-    color: #070707;
+    color: #1a1919;
     font-weight: 700;
     padding: 0;
     margin: 0;
@@ -119,8 +119,11 @@
 
 .page-title {
     text-align: center;
+    font-family: 'Sacramento', cursive;
     font-weight: 600;
-    color: #070707;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #1a1919;
 }
 
 .barrier {
@@ -203,6 +206,10 @@ div#map {
 @media (max-width: 992px) {
     .media {
         display: block;
+    }
+
+    .testimonial {
+        margin-top: 10px;
     }
 
 }
