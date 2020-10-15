@@ -1,8 +1,8 @@
 var map;
 var InfoObj = [];
 var centerCords = {
-            lat: 36.7783,
-            lng: -119.4179
+            lat: 27.2730,
+            lng: -80.3582
         }; 
 
 var markersOnMap = [
@@ -142,7 +142,7 @@ window.onload = function() {
 
 function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 6,
+        zoom: 7,
         center: centerCords
     });
     addMarkerInfo(); 
