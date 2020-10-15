@@ -67,13 +67,13 @@
 .lead-text {
     text-align: center;
     font-family: 'Sacramento', cursive;
-    color: #fff5f5;
+    color: #524f4f;
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 14px;
     margin: auto;
     width: 50%;
-    line-height: 3;
+    line-height: 2;
 }
 
 .btn-decoration {
@@ -93,8 +93,8 @@
     text-align: center;
     display: inline;
     font-family: 'Sacramento', cursive;
-    color: #1a1919;
-    font-weight: 700;
+    color: #fff5f5;
+    font-weight: 500;
     padding: 0;
     margin: 0;
 }  
@@ -105,7 +105,7 @@
 }
 
 .banner-image {
-    background-image: url("../images/flight.jpg");
+    background-image: url("../images/jumbotron.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 25px auto;
@@ -211,7 +211,6 @@ div#map {
     .testimonial {
         margin-top: 10px;
     }
-
 }
 
 @media (max-width: 443px) {
