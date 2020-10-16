@@ -137,11 +137,26 @@ div#map {
 }
 
 .contact-us {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     font-family: 'Sacramento', cursive;
     font-weight: 600;
     color: #1a1919;
+}
+
+.contact-us-bg {
+    background-color: rgb(189, 22, 22);
+}
+
+.contact-us-btn {
+    background-color: rgb(189, 22, 22);
+    border:  rgb(189, 22, 22);
+    color: #fff5f5;
+    margin-top: 8px;
+}
+
+.contact-us-height {
+    min-height: 150px;
 }
 
 /**---------Footer-------------*/
@@ -233,3 +248,5 @@ div#map {
         flex-wrap: nowrap;
     }
 }
+
+
