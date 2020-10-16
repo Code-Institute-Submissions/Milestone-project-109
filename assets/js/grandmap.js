@@ -15,7 +15,7 @@ var markersOnMap = [
         }],
     },
     {
-        content: "The south rim",
+        content: "The south rim is perhaps the most popular entry point to the Grand Canyon and there's good reason. There are a vast array of activities available here that should be taken advantage of. There are some terrific Ranger Programs sponsored by National Park Service that include topics such as geology, animals and birds, fossils and cultural history. Whether you are driving, flying, biking or walking to get to the Grand Canyon, you come for the views. There are a variety of lectures or hikes guided by experienced rangers that will enhance your visit to the Grand Canyon. There is also a Junior Ranger Program for kids 6-14 years old.",
         placeName: "South Rim Trail",
         LatLng:[{
             lat: 36.0583,
@@ -23,7 +23,7 @@ var markersOnMap = [
         }],
     },
     {   
-        content: "Grand Canyon village is...",
+        content: "Grand Canyon Village is a census-designated place located on the South Rim of the Grand Canyon, in Coconino County, Arizona, in the United States. Its population was 2,004 at the 2010 Census. Located in Grand Canyon National Park, it is wholly focused on accommodating tourists visiting the canyon.",
         placeName: "Grand Canyon village",
         LatLng:[{
             lat: 36.0544,
@@ -31,7 +31,7 @@ var markersOnMap = [
         }],
     },
     {   
-        content: "Hub of information and meeting point...",
+        content: "Hub for park information, bike rentals, coffee, exhibits & historical artifacts, plus a gift shop.",
         placeName: "Grand Canyon Visitor's Center",
         LatLng:[{
             lat: 36.0591,
@@ -39,7 +39,7 @@ var markersOnMap = [
         }],
     },
     {   
-        content: "skywalk is absolutely breathtaking, found at the west rim..",
+        content: "The Grand Canyon Skywalk is an absolutely breathtaking horseshoe-shaped cantilever bridge with a glass walkway at Eagle Point in Arizona near the Colorado River on the edge of a side canyon in the Grand Canyon West area of the main canyon",
         placeName: "Grand Canyon Skywalk",
         LatLng:[{
             lat: 36.0120,
@@ -47,7 +47,7 @@ var markersOnMap = [
         }],
     },
     {   
-        content: "North rim is...",
+        content: "North Rim is a populated place in Coconino County, Arizona, United States. It is located adjacent to the Grand Canyon within Grand Canyon National Park. The area includes a Visitor Center, the Grand Canyon Lodge, and a number of hiking trails, including the Bright Angel Point Trail and Transept Trail.",
         placeName: "North Rim Trail",
         LatLng:[{
             lat: 36.2135,
@@ -55,7 +55,7 @@ var markersOnMap = [
         }],
     },
     {   
-        content: "Havasupai Falls are...",
+        content: "Havasu Falls (Havasupai: Havasuw Hagjahgeevma) is a waterfall of Havasu Creek, located in the Grand Canyon, Arizona, United States. It is within Havasupai tribal lands. Havasu Falls is located 1 1⁄2 miles (2.4 km) from Supai. It is the more famous and most visited of the various falls along Havasu Creek. It consists of one main chute that drops over a 90-to-100-foot (27 to 30 m) vertical cliff into a series of plunge pools. High calcium carbonate concentration in the water creates the vivid blue-green color and forms the natural travertine dams that occur in various places near the falls.",
         placeName: "Havasupai Falls",
         LatLng:[{
             lat: 36.2552,
@@ -79,7 +79,7 @@ function initMap() {
 
 function addMarkerInfo() {
     for ( var i = 0; i < markersOnMap.length; i++ ) {
-        var contentString = "<h5 style='text-align:center;'>" + markersOnMap[i].placeName + "</h5>" + "<p style='text-align:center;'>" + markersOnMap[i].content + "</p>";
+        var contentString = "<h5 style='text-align:center;'>" + markersOnMap[i].placeName + "</h5>" + "<p style='text-align:center;'>" + markersOnMap[i].content + "</p>" + "<p style='text-align:center;'>" + markersOnMap[i].address + "</p>";
         const marker = new google.maps.Marker({
             position: markersOnMap[i].LatLng[0],
             map: map
