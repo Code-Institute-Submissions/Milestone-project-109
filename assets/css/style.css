@@ -136,6 +136,14 @@ div#map {
     border-radius: 25px; 
 }
 
+.contact-us {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-weight: 600;
+    color: #1a1919;
+}
+
 /**---------Footer-------------*/
 
 .footer {
