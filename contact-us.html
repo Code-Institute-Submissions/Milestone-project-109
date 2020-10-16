@@ -64,7 +64,7 @@
                             <h3 class="heading">Contact Us</h3>
                             <p>Please ask us any questions you may have and we'll get back to you right away</p>   
                         <div>
-                            <form>
+                            <form onsubmit="return sendMail(this);">
 
                                 <input id="FullName" class="form-control" type="text" name="name" placeholder="Enter Full Name" required>
                                 <br>
@@ -126,5 +126,6 @@
     </footer>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
 </body>
 </html>
