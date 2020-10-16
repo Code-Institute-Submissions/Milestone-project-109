@@ -40,16 +40,12 @@
     color: #fff5f5;
 }
 
-.wallpaper, .wallpaper-destinations {
-    background-image: url("../images/statue-of-liberty.jpg");
+.wallpaper {
+    background-image: url("../images/clear-skies.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 1000px;
-}
-
-.wallpaper-destinations {
-    background-image: url("../images/clear-skies.jpg")
 }
 
 .testimonial {
@@ -58,7 +54,7 @@
     text-align: center;
     font-family: 'Sacramento', cursive;
     font-weight: 700;
-    color: #1a1919;
+    color: #524f4f;
     text-transform: none;
     font-size: 14px;
     letter-spacing: 0;
@@ -155,8 +151,11 @@ div#map {
     margin-top: 8px;
 }
 
-.contact-us-height {
-    min-height: 150px;
+.reverse-us-btn {
+    background-color: #fff5f5;
+    border: #fff5f5;
+    color: rgb(189, 22, 22);
+    border-radius: 25px;
 }
 
 /**---------Footer-------------*/

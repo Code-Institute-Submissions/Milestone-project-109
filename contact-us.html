@@ -35,7 +35,7 @@
         </ul>
     </div>
     <div>
-        <a href="#" class="active nav-link d-none d-md-block">Contact Us</a>
+        <a href="contact-us.html" class="active reverse-us-btn nav-link d-none d-md-block">Contact Us</a>
     </div>
     </nav>
     <div class="row">
@@ -50,7 +50,7 @@
         </div>
     </div>
     </header>
-    <section class="wallpaper-destinations">
+    <section class="wallpaper">
         <div class="container-fluid">
             <div class="container">
                 <div class="row contact-us">
@@ -58,17 +58,21 @@
                             <h3 class="heading">Contact Us</h3>
                             <p>Please ask us any questions you may have and we'll get back to you right away</p>   
                         <div>
-                        <form class="form-align">
+                            <form>
 
-                            <input id="FullName" class="form-control" type="text" placeholder="Enter Full Name" name="Full Name" required>
-                            <br>
-                            <input id="Email" class="form-control" type="text" placeholder="Enter Email Address" name="Email" required>
-                            <br>
-                            <textarea class="form-control contact-us-height" placeholder="How can we assist you?"></textarea>
-                            <br>
+                                <input id="FullName" class="form-control" type="text" name="name" placeholder="Enter Full Name" required>
+                                <br>
+                                <input id="Email" class="form-control" type="email" name="Email" placeholder="Enter Email Address" required>
+                                <br>
+                                <textarea id="HowCanWeAssist" rows="6" class="form-control" name= "HowCanWeAssist" placeholder="How can we assist you?"></textarea>
+                                <br>
+                            <div class="form-row">  
+                                <div class="col">
+                                    <button type="submit" class="btn-lg contact-us-btn">Contact Us</button>
+                                </div>          
+                            </div>
                         </form>
-                    </div>  
-                    <button class="btn-lg contact-us-btn" type="submit" placeholder="Contact Us">Contact Us</button>      
+                        </div>
                     </div>
                 </div>
             </div>
