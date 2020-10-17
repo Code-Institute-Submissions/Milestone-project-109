@@ -57,6 +57,7 @@ This is a website for American Adventures. It is designed to be responsive and a
 * The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
     1. W3C Markup Validator for HTML and CSS - <a href="https://github.com/DJWOOLLEY84/Milestone-project-2/blob/master/Validator">Results</a> 
+    2. I have tested all the jQuery links and contact us email form manually. I have also gone through all the maps and checked markers to see that they are presenting correctly.
 
 * Testing User Goals
 
