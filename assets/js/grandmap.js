@@ -1,11 +1,11 @@
 var map;
 var InfoObj = [];
-var centerCords = {
+var centerCords = {  //where the map is centered//
             lat: 36.4158,
             lng: -113.0666
         }; 
 
-var markersOnMap = [
+var markersOnMap = [  //markers information - co-ordinates, place name and brief description//
     {   
         content: "Hoover Dam is a concrete arch-gravity dam in the Black Canyon of the Colorado River, on the border between the U.S. states of Nevada and Arizona. It was constructed between 1931 and 1936 during the Great Depression and was dedicated on September 30, 1935, by President Franklin D. Roosevelt.",
         placeName: "Hoover Damn Tourist Center",
@@ -75,40 +75,40 @@ window.onload = function() {
     initMap();
 };
 
-function initMap() {
+function initMap() {  //renders map on page//
         map = new google.maps.Map(document.getElementById("map"), {
         zoom: 8,
         center: centerCords
     });
-    addMarkerInfo(); 
-}
+    addMarkerInfo();  //markers added to the map//
 
 
-function addMarkerInfo() {
+function addMarkerInfo() {  //loops through markersOnMap providing wanted info in contentstring //
     for ( var i = 0; i < markersOnMap.length; i++ ) {
         var contentString = "<h5 style='text-align:center;'>" + markersOnMap[i].placeName + "</h5>" + "<p style='text-align:center;'>" + markersOnMap[i].content + "</p>" + "<p style='text-align:center;'>" + markersOnMap[i].address + "</p>";
         const marker = new google.maps.Marker({
-            position: markersOnMap[i].LatLng[0],
+            position: markersOnMap[i].LatLng[0],  //lists markers from top down//
             map: map
         });
 
-        const infowindow = new google.maps.InfoWindow({
+        const infowindow = new google.maps.InfoWindow({  //creates infowindow to contain marker info//
             content: contentString,
         });
 
-        marker.addListener("click", () => {
+        marker.addListener("click", () => {  //opens infowindow on click event//
             closeOtherInfo();
             infowindow.open(marker.get("map"), marker);
             InfoObj[0] = infowindow;
         });
     }
 
-function closeOtherInfo() {
+function closeOtherInfo() {  //clears previous marker info on opening another marker//
     if (InfoObj.length > 0 ) {
         InfoObj[0].set("marker", null);
         InfoObj[0].close();
         InfoObj[0].length = 0;
     }
     
+}
 }
 }

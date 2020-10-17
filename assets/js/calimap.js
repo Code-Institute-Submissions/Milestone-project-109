@@ -1,11 +1,11 @@
-var map;
-var InfoObj = [];
-var centerCords = {
+let map;
+let InfoObj = [];
+let centerCords = {  //where the map is centered//
             lat: 36.7783,
             lng: -119.4179
         }; 
 
-var markersOnMap = [
+let markersOnMap = [ //markers information - co-ordinates, place name and brief description//
     {   
         content: "Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.",
         placeName: "Los Angeles",
@@ -156,35 +156,35 @@ window.onload = function() {
     initMap();
 };
 
-function initMap() {
+function initMap() { //renders map on page//
         map = new google.maps.Map(document.getElementById("map"), {
         zoom: 6,
         center: centerCords
     });
-    addMarkerInfo(); 
+    addMarkerInfo(); //markers added to the map//
 }
 
 
-function addMarkerInfo() {
-    for ( var i = 0; i < markersOnMap.length; i++ ) {
-        var contentString = "<h5 style='text-align:center;'>" + markersOnMap[i].placeName + "</h5>" + "<p style='text-align:center;'>" + markersOnMap[i].content + "</p>" + "<p style='text-align:center;'>" + markersOnMap[i].address + "</p>";
+function addMarkerInfo() { //loops through markersOnMap providing wanted info in contentstring //
+    for ( let i = 0; i < markersOnMap.length; i++ ) {
+        let contentString = "<h5 style='text-align:center;'>" + markersOnMap[i].placeName + "</h5>" + "<p style='text-align:center;'>" + markersOnMap[i].content + "</p>" + "<p style='text-align:center;'>" + markersOnMap[i].address + "</p>";
         const marker = new google.maps.Marker({
-            position: markersOnMap[i].LatLng[0],
+            position: markersOnMap[i].LatLng[0], //lists markers from top down//
             map: map
         });
 
-        const infowindow = new google.maps.InfoWindow({
+        const infowindow = new google.maps.InfoWindow({ //creates infowindow to contain marker info//
             content: contentString,
         });
 
-        marker.addListener("click", () => {
+        marker.addListener("click", () => {  //opens infowindow on click event//
             closeOtherInfo();
             infowindow.open(marker.get("map"), marker);
             InfoObj[0] = infowindow;
         });
     }
 
-function closeOtherInfo() {
+function closeOtherInfo() { //clears previous marker info on opening another marker//
     if (InfoObj.length > 0 ) {
         InfoObj[0].set("marker", null);
         InfoObj[0].close();
