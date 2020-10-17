@@ -5,7 +5,6 @@
 .main-image {
     margin-top: 20px;
     background: url("../images/american-flag.jpg");
-    opacity: 0.8;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,7 +27,6 @@
     text-align: center;
     letter-spacing: 2px;
     background-color: rgb(189, 22, 22);
-    opacity: 0.9;
     color: #fff5f5;
 }
 .phone-text {
@@ -108,9 +106,13 @@
     min-height: 200px;
 }
 
-.hyperlink {
+.hyperlink, .hyperlink-jumbo {
     text-decoration: none;
-    color: black;
+    color: #1a1919;
+}
+
+.hyperlink-jumbo {
+    color: #fff5f5;
 }
 
 .page-title {
@@ -119,7 +121,7 @@
     font-weight: 600;
     padding: 20px;
     text-transform: uppercase;
-    color: #1a1919;
+    color: #524f4f;
 }
 
 .barrier {
@@ -144,11 +146,15 @@ div#map {
     background-color: rgb(189, 22, 22);
 }
 
-.contact-us-btn {
+.contact-us-btn, .buy-now-btn {
     background-color: rgb(189, 22, 22);
     border:  rgb(189, 22, 22);
     color: #fff5f5;
     margin-top: 8px;
+}
+
+.buy-now-btn {
+    margin-top: 0px;
 }
 
 .reverse-us-btn {
@@ -156,6 +162,22 @@ div#map {
     border: #fff5f5;
     color: rgb(189, 22, 22);
     border-radius: 25px;
+}
+
+.table-heading {
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'Sacramento', cursive;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.table-text {
+    padding-bottom: 5px;
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    color: #1a1919;
+    text-align: center;
+    font-size: 14px;
 }
 
 /**---------Footer-------------*/

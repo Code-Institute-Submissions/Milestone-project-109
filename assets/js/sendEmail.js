@@ -5,10 +5,11 @@ function sendMail(contactUs){
         "contact_us": contactUs.HowCanWeAssist.value})
     .then(
         function(response) {
-            console.log("Success", response);
+            alert("Success");
+            window.location.href = 'index.html'
         },
         function(error) {
-            console.log("Failed", error);
+            alert("Failed");
         });
 return false;
 }
