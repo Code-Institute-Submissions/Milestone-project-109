@@ -11,10 +11,6 @@
     min-height: 400px;
 } 
 
-.navbar {
-    font-family: 'IBM Plex Sans' sans-serif; 
-}
-
 .bg-nav {
     background-color: rgb(189, 22, 22);
     z-index: 1;
@@ -167,7 +163,7 @@ div#map {
     border-radius: 25px;
 }
 
-/**-----your-holiday------**//
+/**-----your-holiday------**/
 
 .buy-now-btn {
     margin-top: 0px;
