@@ -58,6 +58,8 @@
     letter-spacing: 0;
 }
 
+/*****-------destination pages-----****/
+
 .lead-text {
     text-align: center;
     font-family: 'Sacramento', cursive;
@@ -76,7 +78,6 @@
 
 .btn-edit {
     border-radius: 25px;
-    color: blue;
 }
 
 .softened-borders {
@@ -92,6 +93,21 @@
     padding: 0;
     margin: 0;
 }  
+
+.page-title {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-weight: 600;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #524f4f;
+}
+
+.barrier {
+    padding: 25px; 
+}
+
+/*****------Jumbotron messages-----**/
 
 .announcement h3 {
     letter-spacing: 2px;
@@ -115,24 +131,15 @@
     color: #fff5f5;
 }
 
-.page-title {
-    text-align: center;
-    font-family: 'Sacramento', cursive;
-    font-weight: 600;
-    padding: 20px;
-    text-transform: uppercase;
-    color: #524f4f;
-}
-
-.barrier {
-    padding: 25px; 
-}
+/***-----Google Maps----**/
 
 div#map {
     min-height: 360px;
     margin: 0 auto;  
     border-radius: 25px; 
 }
+
+/**------contact-us----**/
 
 .contact-us {
     padding: 30px;
@@ -153,15 +160,17 @@ div#map {
     margin-top: 8px;
 }
 
-.buy-now-btn {
-    margin-top: 0px;
-}
-
 .reverse-us-btn {
     background-color: #fff5f5;
     border: #fff5f5;
     color: rgb(189, 22, 22);
     border-radius: 25px;
+}
+
+/**-----your-holiday------**//
+
+.buy-now-btn {
+    margin-top: 0px;
 }
 
 .table-heading {
